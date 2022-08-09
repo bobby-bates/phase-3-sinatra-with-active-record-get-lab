@@ -2,6 +2,10 @@
 # if our application is running locally in development, in a test environment, or in production
 ENV['RACK_ENV'] ||= "development"
 
+require 'pry'
+# require 'awesome_print'
+# AwesomePrint.pry!
+
 # Require in Gems
 require 'bundler/setup'
 Bundler.require(:default, ENV['RACK_ENV'])
